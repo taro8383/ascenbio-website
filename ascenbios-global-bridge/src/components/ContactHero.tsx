@@ -1,0 +1,68 @@
+
+const ContactHero = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-dark via-primary-medium to-primary-light text-white overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm10 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }}></div>
+      </div>
+
+      {/* Global Connectivity Animation */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-20">
+        <div className="relative w-96 h-96">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-primary-light rounded-full animate-pulse"></div>
+          <div className="absolute top-1/4 right-0 w-12 h-12 bg-primary-very-light rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute bottom-1/4 right-0 w-14 h-14 bg-primary-light rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-primary-very-light rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute bottom-1/4 left-0 w-12 h-12 bg-primary-light rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/4 left-0 w-14 h-14 bg-primary-very-light rounded-full animate-pulse" style={{ animationDelay: '2.5s' }}></div>
+          
+          {/* Connection Lines */}
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400">
+            <path
+              d="M200,50 L350,100 L350,300 L200,350 L50,300 L50,100 Z"
+              stroke="currentColor"
+              strokeWidth="2"
+              fill="none"
+              className="opacity-30"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+            Connect With Our Global
+            <span className="block bg-gradient-to-r from-primary-lightest to-primary-very-light bg-clip-text text-transparent">
+              Healthcare Solutions Team
+            </span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-primary-lightest mb-12 max-w-3xl mx-auto leading-relaxed">
+            Reach the right experts for your healthcare innovation needs across our global network
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+              <div className="w-2 h-2 bg-primary-lightest rounded-full mr-2 animate-pulse"></div>
+              <span>Available 24/7</span>
+            </div>
+            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+              <div className="w-2 h-2 bg-primary-lightest rounded-full mr-2 animate-pulse"></div>
+              <span>Global Expertise</span>
+            </div>
+            <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+              <div className="w-2 h-2 bg-primary-lightest rounded-full mr-2 animate-pulse"></div>
+              <span>Multilingual Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactHero;
