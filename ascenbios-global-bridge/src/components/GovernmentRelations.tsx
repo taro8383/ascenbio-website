@@ -59,37 +59,6 @@ const GovernmentRelations = () => {
           ))}
         </div>
 
-        {/* Regulatory Approval Pathway Visualization */}
-        <div className="bg-gradient-to-r from-slate-700 to-gray-700 rounded-lg p-8 text-white">
-          <h3 className="text-2xl font-bold mb-8 text-center">Regulatory Approval Pathway</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-            {[
-              { phase: 'Pre-submission', duration: '2-4 weeks', description: 'Initial consultation and documentation' },
-              { phase: 'Application', duration: '4-6 weeks', description: 'Formal submission and review' },
-              { phase: 'Technical Review', duration: '8-12 weeks', description: 'Detailed technical assessment' },
-              { phase: 'Approval', duration: '2-4 weeks', description: 'Final approval and certification' },
-              { phase: 'Market Entry', duration: '1-2 weeks', description: 'Commercial launch clearance' }
-            ].map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-slate-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="font-bold">{index + 1}</span>
-                </div>
-                <h4 className="font-semibold mb-2">{step.phase}</h4>
-                <div className="text-sm text-slate-300 mb-2">{step.duration}</div>
-                <p className="text-xs text-slate-400">{step.description}</p>
-              </div>
-            ))}
-          </div>
-          
-          <div className="mt-8 text-center">
-            <div className="inline-flex items-center gap-4 bg-slate-600 px-6 py-3 rounded-lg">
-              <div className="text-sm">
-                <span className="font-semibold">Average Time Reduction:</span> 40% faster than industry standard
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
